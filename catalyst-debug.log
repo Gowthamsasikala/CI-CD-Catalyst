@@ -1,0 +1,156 @@
+[debug] [2024-03-11T06:50:06.503Z] : 
+[debug] [2024-03-11T06:50:06.504Z] : ----------------------------------------------------------------------
+[debug] [2024-03-11T06:50:06.504Z] : Command:      /opt/homebrew/Cellar/node/21.6.1/bin/node /opt/homebrew/bin/catalyst token:generate
+[debug] [2024-03-11T06:50:06.505Z] : CLI Version:  1.17.2
+[debug] [2024-03-11T06:50:06.505Z] : Platform:     darwin
+[debug] [2024-03-11T06:50:06.505Z] : Node Version: v21.6.1
+[debug] [2024-03-11T06:50:06.505Z] : Time:         Mon Mar 11 2024 12:20:06 GMT+0530 (India Standard Time)
+[debug] [2024-03-11T06:50:06.505Z] : ----------------------------------------------------------------------
+[debug] [2024-03-11T06:50:06.505Z] : 
+[debug] [2024-03-11T06:50:06.924Z] : > authorizing via signed-in user option
+[debug] [2024-03-11T06:50:06.925Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL"]
+[debug] [2024-03-11T06:50:06.939Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.com/oauth/v3/device/code 
+Query params: {"client_id":"1004.NMUISG5YKILERY9G29LJHZWIY9II7Y","scope":"ZohoCatalyst.apigateway.apis.READ ZohoCatalyst.apigateway.apis.CREATE ZohoCatalyst.apigateway.apis.UPDATE ZohoCatalyst.apigateway.apis.DELETE ZohoCatalyst.apigateway.READ ZohoCatalyst.apigateway.UPDATE ZohoCatalyst.segments.ALL ZohoCatalyst.cache.READ ZohoCatalyst.cache.CREATE ZohoCatalyst.cache.DELETE ZohoCatalyst.queue.ALL ZohoCatalyst.queue.data.READ ZohoCatalyst.queue.data.CREATE ZohoCatalyst.projects.ALL ZohoCatalyst.project.export.READ ZohoCatalyst.project.export.CREATE ZohoCatalyst.project.import.READ ZohoCatalyst.project.import.CREATE ZohoCatalyst.project.import.DELETE ZohoCatalyst.cron.ALL ZohoCatalyst.zcql.CREATE ZohoCatalyst.webapp.ALL ZohoCatalyst.projects.users.READ ZohoCatalyst.projects.users.CREATE ZohoCatalyst.projects.users.DELETE ZohoCatalyst.projects.users.UPDATE ZohoCatalyst.email.CREATE ZohoCatalyst.tables.ALL ZohoCatalyst.tables.rows.ALL ZohoCatalyst.tables.columns.ALL ZohoCatalyst.tables.bulk.READ ZohoCatalyst.tables.bulk.CREATE ZohoCatalyst.folders.ALL ZohoCatalyst.files.CREATE ZohoCatalyst.files.READ ZohoCatalyst.files.DELETE ZohoCatalyst.functions.ALL ZohoCatalyst.functions.EXECUTE ZohoCatalyst.eventlistners.ALL ZohoCatalyst.eventlisteners.produce ZohoCatalyst.security.rules.Read ZohoCatalyst.security.rules.Update ZohoCatalyst.notifications.mobile ZohoCatalyst.notifications.web ZohoCatalyst.search.READ ZohoCatalyst.mlkit.READ QuickML.deployment.READ ZohoCatalyst.pdfshot.execute ZohoCatalyst.dataverse.execute ZohoCatalyst.circuits.execute ZohoCatalyst.circuits.execution.READ ZohoCatalyst.circuits.execution.DELETE ZohoCatalyst.cli.logs.CREATE ZohoCatalyst.appsail.Read ZohoCatalyst.appsail.Create ZohoCatalyst.appsail.Update ZohoCatalyst.appsail.Delete AaaServer.profile.READ Stratus.sdkop.CREATE Stratus.sdkop.READ","grant_type":"device_request","access_type":"offline","prompt":"consent"}
+
+[debug] [2024-03-11T06:50:07.912Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 11 Mar 2024 06:50:07 GMT","content-type":"application/json;charset=UTF-8","content-length":"313","connection":"keep-alive","set-cookie":["b266a5bf57=a7f15cb1555106de5ac96d088b72e7c8; Path=/","iamcsr=49dd25e4-745a-42c9-b879-94d7ff68fd04;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=49dd25e4-745a-42c9-b879-94d7ff68fd04;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"SAMEORIGIN","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[info] [2024-03-11T06:50:07.915Z] : 
+[info] [2024-03-11T06:50:07.915Z] : Visit this URL on any device: 
+
+[info] [2024-03-11T06:50:07.916Z] : https://accounts.zoho.com/oauth/v3/device
+[info] [2024-03-11T06:50:07.916Z] : 
+[info] [2024-03-11T06:50:07.916Z] : Enter the device verification code: QQUN-8727 and click verify to continue.
+[debug] [2024-03-11T06:50:17.923Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.com/oauth/v3/device/token 
+<request query omitted>
+
+[debug] [2024-03-11T06:50:18.756Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 11 Mar 2024 06:50:18 GMT","content-type":"application/json;charset=UTF-8","content-length":"33","connection":"keep-alive","set-cookie":["b266a5bf57=a711b6da0e6cbadb5e254290f114a026; Path=/","iamcsr=86287bcf-f4ab-4100-9d11-afcdf50a3c17;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=86287bcf-f4ab-4100-9d11-afcdf50a3c17;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"SAMEORIGIN","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-03-11T06:50:18.758Z] : Token Fetch Error: 
+ Status: 200, Body: {"error":"authorization_pending"}
+[debug] [2024-03-11T06:50:18.758Z] : > polling <
+[debug] [2024-03-11T06:50:20.762Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.com/oauth/v3/device/token 
+<request query omitted>
+
+[debug] [2024-03-11T06:50:21.027Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 11 Mar 2024 06:50:20 GMT","content-type":"application/json;charset=UTF-8","content-length":"21","connection":"keep-alive","set-cookie":["b266a5bf57=a711b6da0e6cbadb5e254290f114a026; Path=/","iamcsr=9f7f79b0-a4c5-44c9-b732-969dc2513054;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=9f7f79b0-a4c5-44c9-b732-969dc2513054;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"SAMEORIGIN","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-03-11T06:50:21.028Z] : Token Fetch Error: 
+ Status: 200, Body: {"error":"slow_down"}
+[debug] [2024-03-11T06:50:21.029Z] : > polling <
+[debug] [2024-03-11T06:50:23.033Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.com/oauth/v3/device/token 
+<request query omitted>
+
+[debug] [2024-03-11T06:50:23.286Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 11 Mar 2024 06:50:23 GMT","content-type":"application/json;charset=UTF-8","content-length":"21","connection":"keep-alive","set-cookie":["b266a5bf57=a711b6da0e6cbadb5e254290f114a026; Path=/","iamcsr=4b9028fe-fa8a-4d39-8209-b00f0e3803db;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=4b9028fe-fa8a-4d39-8209-b00f0e3803db;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"SAMEORIGIN","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-03-11T06:50:23.288Z] : Token Fetch Error: 
+ Status: 200, Body: {"error":"slow_down"}
+[debug] [2024-03-11T06:50:23.288Z] : > polling <
+[debug] [2024-03-11T06:50:25.293Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.com/oauth/v3/device/token 
+<request query omitted>
+
+[debug] [2024-03-11T06:50:25.584Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 11 Mar 2024 06:50:25 GMT","content-type":"application/json;charset=UTF-8","content-length":"33","connection":"keep-alive","set-cookie":["b266a5bf57=a7f15cb1555106de5ac96d088b72e7c8; Path=/","iamcsr=a269b68d-f8bd-4437-949e-8ce561b37604;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=a269b68d-f8bd-4437-949e-8ce561b37604;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"SAMEORIGIN","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-03-11T06:50:25.585Z] : Token Fetch Error: 
+ Status: 200, Body: {"error":"authorization_pending"}
+[debug] [2024-03-11T06:50:25.585Z] : > polling <
+[debug] [2024-03-11T06:50:27.588Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.com/oauth/v3/device/token 
+<request query omitted>
+
+[debug] [2024-03-11T06:50:27.872Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 11 Mar 2024 06:50:27 GMT","content-type":"application/json;charset=UTF-8","content-length":"21","connection":"keep-alive","set-cookie":["b266a5bf57=a711b6da0e6cbadb5e254290f114a026; Path=/","iamcsr=5c0dbc65-d410-4d74-be93-0f308ad4b89a;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=5c0dbc65-d410-4d74-be93-0f308ad4b89a;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"SAMEORIGIN","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-03-11T06:50:27.873Z] : Token Fetch Error: 
+ Status: 200, Body: {"error":"slow_down"}
+[debug] [2024-03-11T06:50:27.873Z] : > polling <
+[debug] [2024-03-11T06:50:29.877Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.com/oauth/v3/device/token 
+<request query omitted>
+
+[debug] [2024-03-11T06:50:30.136Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 11 Mar 2024 06:50:30 GMT","content-type":"application/json;charset=UTF-8","content-length":"21","connection":"keep-alive","set-cookie":["b266a5bf57=a711b6da0e6cbadb5e254290f114a026; Path=/","iamcsr=aa78fc1c-93c7-49a6-a2bd-2743adb03ece;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=aa78fc1c-93c7-49a6-a2bd-2743adb03ece;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"SAMEORIGIN","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-03-11T06:50:30.137Z] : Token Fetch Error: 
+ Status: 200, Body: {"error":"slow_down"}
+[debug] [2024-03-11T06:50:30.137Z] : > polling <
+[debug] [2024-03-11T06:50:32.141Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.com/oauth/v3/device/token 
+<request query omitted>
+
+[debug] [2024-03-11T06:50:32.469Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 11 Mar 2024 06:50:32 GMT","content-type":"application/json;charset=UTF-8","content-length":"33","connection":"keep-alive","set-cookie":["b266a5bf57=9f371135a524e2d1f51eb9f41fa26c60; Path=/","iamcsr=64e607d0-4242-43d9-a014-6b0f02f0dc91;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=64e607d0-4242-43d9-a014-6b0f02f0dc91;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"SAMEORIGIN","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-03-11T06:50:32.470Z] : Token Fetch Error: 
+ Status: 200, Body: {"error":"authorization_pending"}
+[debug] [2024-03-11T06:50:32.470Z] : > polling <
+[debug] [2024-03-11T06:50:34.474Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.com/oauth/v3/device/token 
+<request query omitted>
+
+[debug] [2024-03-11T06:50:34.759Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 11 Mar 2024 06:50:34 GMT","content-type":"application/json;charset=UTF-8","content-length":"21","connection":"keep-alive","set-cookie":["b266a5bf57=9f371135a524e2d1f51eb9f41fa26c60; Path=/","iamcsr=54970bb9-0859-42ea-a90b-8819f090a806;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=54970bb9-0859-42ea-a90b-8819f090a806;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"SAMEORIGIN","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-03-11T06:50:34.762Z] : Token Fetch Error: 
+ Status: 200, Body: {"error":"slow_down"}
+[debug] [2024-03-11T06:50:34.762Z] : > polling <
+[debug] [2024-03-11T06:50:36.766Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.com/oauth/v3/device/token 
+<request query omitted>
+
+[debug] [2024-03-11T06:50:37.021Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 11 Mar 2024 06:50:36 GMT","content-type":"application/json;charset=UTF-8","content-length":"21","connection":"keep-alive","set-cookie":["b266a5bf57=a7f15cb1555106de5ac96d088b72e7c8; Path=/","iamcsr=46c41f11-cfcb-42a1-b5cb-b78fb5dd3ab8;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=46c41f11-cfcb-42a1-b5cb-b78fb5dd3ab8;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"SAMEORIGIN","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-03-11T06:50:37.022Z] : Token Fetch Error: 
+ Status: 200, Body: {"error":"slow_down"}
+[debug] [2024-03-11T06:50:37.022Z] : > polling <
+[debug] [2024-03-11T06:50:39.027Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.com/oauth/v3/device/token 
+<request query omitted>
+
+[debug] [2024-03-11T06:50:39.556Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 11 Mar 2024 06:50:39 GMT","content-type":"application/json;charset=UTF-8","content-length":"21","connection":"keep-alive","set-cookie":["b266a5bf57=a711b6da0e6cbadb5e254290f114a026; Path=/","iamcsr=8672551b-39ad-4536-9600-a5d269249a8e;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=8672551b-39ad-4536-9600-a5d269249a8e;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"SAMEORIGIN","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-03-11T06:50:39.558Z] : Token Fetch Error: 
+ Status: 200, Body: {"error":"slow_down"}
+[debug] [2024-03-11T06:50:39.558Z] : > polling <
+[debug] [2024-03-11T06:50:41.562Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.com/oauth/v3/device/token 
+<request query omitted>
+
+[debug] [2024-03-11T06:50:41.932Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 11 Mar 2024 06:50:41 GMT","content-type":"application/json;charset=UTF-8","content-length":"21","connection":"keep-alive","set-cookie":["b266a5bf57=a711b6da0e6cbadb5e254290f114a026; Path=/","iamcsr=051b3a74-3733-43a2-a2ab-2ac26546282f;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=051b3a74-3733-43a2-a2ab-2ac26546282f;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"SAMEORIGIN","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-03-11T06:50:41.934Z] : Token Fetch Error: 
+ Status: 200, Body: {"error":"slow_down"}
+[debug] [2024-03-11T06:50:41.934Z] : > polling <
+[debug] [2024-03-11T06:50:43.937Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.com/oauth/v3/device/token 
+<request query omitted>
+
+[debug] [2024-03-11T06:50:44.260Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 11 Mar 2024 06:50:44 GMT","content-type":"application/json;charset=UTF-8","content-length":"21","connection":"keep-alive","set-cookie":["b266a5bf57=9f371135a524e2d1f51eb9f41fa26c60; Path=/","iamcsr=bf93dc23-9047-488a-bb19-166bfdd8a9c8;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=bf93dc23-9047-488a-bb19-166bfdd8a9c8;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"SAMEORIGIN","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-03-11T06:50:44.264Z] : Token Fetch Error: 
+ Status: 200, Body: {"error":"slow_down"}
+[debug] [2024-03-11T06:50:44.264Z] : > polling <
+[debug] [2024-03-11T06:50:46.270Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.com/oauth/v3/device/token 
+<request query omitted>
+
+[warn] [2024-03-11T06:50:56.553Z] : ⚠ ETIMEDOUT has occured while communicating remote server. Kindly be patient while the cli retries this request.
+[debug] [2024-03-11T06:50:56.554Z] : API Error while firing request : read ETIMEDOUT
+
+[debug] [2024-03-11T06:50:56.554Z] : >>>> RETRYING
+
+[debug] [2024-03-11T06:50:57.421Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 11 Mar 2024 06:50:57 GMT","content-type":"application/json;charset=UTF-8","content-length":"258","connection":"keep-alive","set-cookie":["b266a5bf57=a711b6da0e6cbadb5e254290f114a026; Path=/","iamcsr=99d308b7-465a-48c5-b16e-10db4cc837e8;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=99d308b7-465a-48c5-b16e-10db4cc837e8;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"SAMEORIGIN","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[info] [2024-03-11T06:50:57.439Z] : ✔ Token generated successfully : m_1004.559dbfe96c6d98df7d8e2cf47df4d627.53aa1d60db064679bbbb99cff01be7c2
+[error] [2024-03-11T06:50:57.442Z] : ✖ API Error: read ETIMEDOUT
+[debug] [2024-03-11T06:50:57.442Z] : Error Stack: CatalystError: API Error: read ETIMEDOUT
+    at API.<anonymous> (/opt/homebrew/lib/node_modules/zcatalyst-cli/lib/internal/api.js:211:32)
+    at Generator.next (<anonymous>)
+    at fulfilled (/opt/homebrew/lib/node_modules/zcatalyst-cli/lib/internal/api.js:28:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[debug] [2024-03-11T06:50:57.442Z] : Original Error: Error: read ETIMEDOUT
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:217:20)
+[debug] [2024-03-11T06:50:57.442Z] : Error Status: 500
+[info] [2024-03-11T06:50:57.442Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
+[debug] [2024-03-11T06:50:57.443Z] : EXEC ENDED with event: token:generate, message: success
+[debug] [2024-03-11T06:50:57.443Z] : TOTAL DURATION OF COMMAND EXEC : 50522
+[debug] [2024-03-11T06:50:57.443Z] : Unable to initialise the log API
